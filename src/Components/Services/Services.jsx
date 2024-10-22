@@ -206,13 +206,10 @@ function Services() {
         </h1>
       </div>
 
-      {/* Hidden Section for larger devices */}
       <div className="hidden md:flex bg-black text-white min-h-90vh space-x-8 pl-10">
   <div className="w-1/2 relative flex justify-center items-center ml-32">
-    {/* Semi-circle rotated 90 degrees */}
     <span className="border-4 border-blue-700 rounded-t-full w-[230px] h-[115px] rotate-90 border-b-0 flex justify-center absolute left-[-50px] top-[50px]">
       <div className="relative flex justify-center">
-        {/* List rotated -90 degrees with a gap */}
         <ul className="absolute top-[-250px] text-gray-400 mb-10 w-full flex flex-col items-center rotate-[-90deg] space-y-8">
                 <li
                   className="text-2xl cursor-pointer hover:text-white whitespace-nowrap ml-10"
@@ -260,7 +257,7 @@ function Services() {
           {activeContent === "content2" && (
             <div className="flex flex-col items-center">
               <img
-                src="madison-yocum-iO2DVTIXP4g-unsplash.jpg"
+                src="Screenshot 2024-10-02 103843.png"
                 alt="UI/UX Designer"
                 className="w-72 h-48 object-cover rounded-xl mb-2"
               />
@@ -273,7 +270,7 @@ function Services() {
           {activeContent === "content3" && (
             <div className="flex flex-col items-center">
               <img
-                src="lukas-blazek-mcSDtbWXUZU-unsplash.jpg"
+                src="nik-73_kRzs9sqo-unsplash.jpg"
                 alt="Data Science & Analytics"
                 className="w-72 h-48 object-cover rounded-xl mb-2"
               />
@@ -286,7 +283,7 @@ function Services() {
           {activeContent === "content4" && (
             <div className="flex flex-col items-center">
               <img
-                src="madison-yocum-iO2DVTIXP4g-unsplash.jpg"
+                src="Screenshot 2024-10-02 103843.png"
                 alt="Mobile App Developer"
                 className="w-72 h-48 object-cover rounded-xl mb-2"
               />
@@ -299,7 +296,6 @@ function Services() {
         </div>
       </div>
 
-      {/* Mobile Specific Section */}
       <div className="md:hidden bg-black text-white text-center pt-10 pb-10">
         <div className="flex flex-col items-center space-y-6 px-4">
           <ul className="text-gray-400 w-full flex flex-col items-center space-y-6">
@@ -333,7 +329,6 @@ function Services() {
             </li>
           </ul>
           <div className="mt-6">
-            {/* Content rendering based on activeContent */}
             {activeContent === "content1" && (
               <div className="flex flex-col items-center mb-2">
                 <img

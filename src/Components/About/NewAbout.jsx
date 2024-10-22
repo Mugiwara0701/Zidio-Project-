@@ -11,7 +11,7 @@ function About() {
   const videoRef = useRef(null);
   const [isLoaderVisible, setIsLoaderVisible] = useState(true);
   const swiperRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(0); // Track active slide index
+  const [activeIndex, setActiveIndex] = useState(0); 
   const { theme } = useContext(ThemeContext);
 
   const cardData = [
@@ -98,24 +98,24 @@ function About() {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={3} // Default for medium screens
-          spaceBetween={20} // Default space between cards
+          slidesPerView={3} 
+          spaceBetween={20} 
           breakpoints={{
             360: {
-              slidesPerView: 1, // 1 card on small screens (mobile)
-              spaceBetween: 10, // Less space on mobile
+              slidesPerView: 1, 
+              spaceBetween: 10, 
             },
             640: {
-              slidesPerView: 1, // 1 card on small screens (mobile)
-              spaceBetween: 10, // Less space on mobile
+              slidesPerView: 1, 
+              spaceBetween: 10, 
             },
             1024: {
-              slidesPerView: 2, // 2 cards on medium screens (tablets)
-              spaceBetween: 10, // Moderate space on tablets
+              slidesPerView: 2,
+              spaceBetween: 10, 
             },
             1440: {
-              slidesPerView: 3, // 3 cards on larger screens (desktops)
-              spaceBetween: 10, // Reduced space between cards for desktops
+              slidesPerView: 3, 
+              spaceBetween: 10, 
             },
           }}
           coverflowEffect={{
@@ -175,12 +175,10 @@ function About() {
           playsInline
         />
 
-        {/* Overlay for the video */}
         <div className="absolute inset-0 bg-black opacity-50 z-1"></div>
 
-        {/* Content container */}
         <div className="relative grid grid-cols-1 md:grid-cols-2 z-10 gap-6 md:gap-10 p-4">
-          <div></div> {/* Empty grid column */}
+          <div></div> 
           <div>
             <p className="text-white text-md md:text-lg mt-4">
               Software Development & Consultancy
@@ -204,7 +202,6 @@ function About() {
               our journey in shaping the future of technology.
             </p>
 
-            {/* Responsive flex container for additional content */}
             <div className="flex flex-col md:flex-row items-center text-white space-y-4 md:space-y-0 md:space-x-4 mt-10">
               <div className="flex flex-col justify-center text-center md:text-left">
                 <h1 className="mb-2">
@@ -227,7 +224,6 @@ function About() {
               </div>
             </div>
 
-            {/* Responsive button */}
             <button className="mt-4 bg-blue-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg md:mb-6 hover:bg-blue-600">
               More About &rarr;
             </button>
